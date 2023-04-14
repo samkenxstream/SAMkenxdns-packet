@@ -211,6 +211,22 @@ And an answer, additional, or authority looks like this
 }
 ```
 
+#### `NAPTR`
+
+``` js
+{
+  data:
+    {
+      order: 100,
+      preference: 10,
+      flags: 's',
+      services: 'SIP+D2U',
+      regexp: '!^.*$!sip:customer-service@example.com!',
+      replacement: '_sip._udp.example.com'
+    }
+}
+```
+
 #### `NS`
 
 ``` js
